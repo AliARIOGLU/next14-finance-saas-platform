@@ -7,6 +7,7 @@ import { ColumnDef } from "@tanstack/react-table";
 import { client } from "@/lib/hono";
 import { Button } from "@/components/ui/button";
 import { Checkbox } from "@/components/ui/checkbox";
+import { Actions } from "./actions";
 
 // success olduğunda alacağımız değer tipini göstermek için 2. parametre olarak status 200 verildi.
 export type ResponseType = InferResponseType<
@@ -50,5 +51,9 @@ export const columns: ColumnDef<ResponseType>[] = [
         </Button>
       );
     },
+  },
+  {
+    id: "actions",
+    cell: ({ row }) => <Actions id={row.original.id} />,
   },
 ];
