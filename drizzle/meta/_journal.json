@@ -15,6 +15,13 @@
       "when": 1716054832000,
       "tag": "0001_blue_mantis",
       "breakpoints": true
+    },
+    {
+      "idx": 2,
+      "version": "5",
+      "when": 1716456324147,
+      "tag": "0002_worthless_blink",
+      "breakpoints": true
     }
   ]
 }
